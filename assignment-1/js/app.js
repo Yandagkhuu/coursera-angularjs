@@ -22,7 +22,7 @@ function LunchCheckController($scope){
 
         if(trimmed == ""){
             $scope.resultStyle = {"color" : "red"};
-            $scope.boxStyle = {"border": "2px solid red"};
+            $scope.boxStyle = {"border": "1px solid red"};
             return "Please enter data first"
         }
         for (var i = 0; i < string.length; i++){
@@ -38,17 +38,17 @@ function LunchCheckController($scope){
 
         if (count == 0){
             $scope.resultStyle = {"color" : "red"};
-            $scope.boxStyle = {"border": "2px solid red"};
+            $scope.boxStyle = {"border": "1px solid red"};
             return "Please enter data first";
         }
         else if (count <= 3){
             $scope.resultStyle = {"color" : "green"};
-            $scope.boxStyle = {"border": "2px solid green"};
+            $scope.boxStyle = {"border": "1px solid green"};
             return "Enjoy!"
         }
         else if (count > 3){
             $scope.resultStyle = {"color" : "green"};
-            $scope.boxStyle = {"border": "2px solid green"};
+            $scope.boxStyle = {"border": "1px solid green"};
             return "Too much!";
         }
         else
